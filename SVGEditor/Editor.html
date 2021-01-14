@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editor Svg</title>
+    <link rel="stylesheet" type="text/css" href="EditorStyle.css">
+    <script src="SvgEditorCode.js" defer></script>
+<head></head>
+<body >
+    <h1>Editor SVG</h1>
+    <div id="Bar">
+            
+        <div  id ="NavShape" class="nav">
+            
+                <a  href="#"id='line'>Line</a>
+                <a  href="#"id='rectangle'>Rectangle</a>
+                <a  href="#"id='ellipse' >Ellipse</a>
+                <a  href="#"id='polygon'>Polygon</a>
+
+            <button type="button" id="btnClear" onclick="Clear()" >Clear</button>
+            <button type="button" id="btnSaveSVG" onclick="saveSVG()">Save as SVG</button>
+            <button type="button" id="btnSavePng" onclick="savePNG()">Save as Png</button>
+            <input type="color" id="color" value="#ff0000"/> 
+            <input type="range" min="1" max="70" value="10" class="Range" id="Thebrush">      
+          </div>
+        </div>
+
+    <svg id="editor" >
+        <svg id="elemente"> </svg> 
+        <rect   draggble="true" class="selection" id="selectionD" x="5" y="5" width="60" height="140" style="display: none"></rect>
+        <ellipse  draggable="true" class="selection" id="selectionE" cx="200" cy="80" rx="100" ry="50" style="display: none"></ellipse>
+        <line  draggable="true" class="selection" id="selectionL" x1="200" y1="80" x2="100" y2="50" style="display: none"></line>
+        <polygon  draggable="true" class="selection" id="selectionR"  points=" 0,0 0,0 0,0 0,0" style="display: none"></polygon>
+   
+    </svg>
+   </body>
+  </html>

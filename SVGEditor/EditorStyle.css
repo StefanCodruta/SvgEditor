@@ -1,0 +1,146 @@
+#NavShape a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s;
+    padding: 9px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 10px; 
+    color: black; 
+    border-radius: 0 5px 5px 0; 
+}
+
+ #NavShape a:hover {
+        left: 0; 
+  }
+
+#line {
+    top: 120px;
+    background-color: #a01238;
+}
+
+#rectangle {
+    top: 150px;
+    background-color: #1f9aae; 
+}
+
+#ellipse {
+    top: 180px;
+    background-color: #104dc0; 
+}
+#polygon{
+    top: 210px;
+    background-color: #a06ef0; 
+}
+
+.Color {
+    background-color:  #0d7892;
+    width: 10%;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.Range {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 15px;
+    background: #4960e3;
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+    .Range:hover {
+        opacity: 1.25;
+    }
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifl;
+    overflow: hidden;
+}
+
+div {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    position: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 7px;
+}
+button{
+    background-color: #0d7892;
+    border: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+h1 {
+    background-color: skyblue;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+ svg {
+    background-color: rgb(161, 174, 209);
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    
+} 
+
+.elemente {
+    fill: gold;
+    fill-opacity: 0.3;
+    stroke: aqua;
+    stroke-opacity: 0.3;
+}
+
+svg rect,
+      svg ellipse,
+      svg line,
+      svg polygon  {
+        fill: rgb(127, 233, 206);
+        fill-opacity: 0.2;
+        /* stroke: rgb(7, 94, 175); */
+        /* stroke-width: 10px; */
+        stroke-opacity: 1;
+        position:fixed;
+      }
+
+.selectat {
+    stroke: rgb(26, 9, 180);
+    stroke-width: 5;
+    stroke-opacity: 0.8;
+     fill:rgb(233, 37, 63);
+
+}
+
+.selectie {
+
+    fill:  rgb(67, 224, 164);
+    stroke: rgb(42, 87, 238);
+    stroke-width: 3;
+    stroke-opacity: 0.3;
+    stroke-dasharray: 3,3;
+  
+
+}
+.draggable{
+
+    cursor:move;
+}
